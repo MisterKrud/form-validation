@@ -11,7 +11,30 @@
     </header>
    
     <div id="content">
-
+<form novalidate>
+    <fieldset>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+           <label for="country">Country</label>
+           <input type="text" id="country" name="country" minlength="3" required /> 
+        </div>
+        <div>
+            <label for="postcode">Postcode</label>
+            <input type="number" minlength="4" maxlength="4" required />
+        </div>
+    </fieldset>
+    <fieldset>
+        <div>
+            <label for="password">password</label>
+            <input type="password" minlength="8" required />
+        </div>
+            <label for="confirm-password"></label>
+            <input type="password" required />
+    </fieldset>
+</form>
     </div>
     
 </body>
