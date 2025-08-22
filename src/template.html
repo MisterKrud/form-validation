@@ -15,35 +15,41 @@
     <fieldset>
         <div>
             <label for="email">
-                <p>Enter your email address</p>
-                <input type="email" id="email" name="email" autocomplete="off" required />
+               <p>Email</p>
+                <input type="email" id="email" name="email" autocomplete="off" class = "blank" required />
                 <span class = "error"></span>
             </label>    
         </div>
         <div>
-           <label for="country">Country
-           <input type="text" id="country" autocomplete="off" name="country" minlength="3" required /> 
+           <label for="country">
+            <p>Country</p>
+           <input type="text" id="country" autocomplete="off" name="country" minlength="3" class = "blank" required /> 
             <span class = "error" aria-live="polite"></span>
             </label>
         </div>
         <div>
-            <label for="postcode">Postcode</label>
-            <input type="number" id="postcode" name="postcode"  minlength="4" maxlength="4" required />
-
+            <label for="postcode"> 
+                <p>Postcode</p>
+            <input type="number" id="postcode" name="postcode"  minlength="4" maxlength="4"  class = "blank" required />
+            </label>
         </div>
     </fieldset>
     <fieldset>
         <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" minlength="8" required />
+            <label for="password">
+                <p>Password</p>
+            <input type="password" id="password" name="password" minlength="8" class = "blank"required />
+            </label>
         </div>
         <div>
-            <label for="confirm-password">Confirm password</label>
-            <input type="password" id="confirm-password" name="confirm-password" required />
+            <label for="confirm-password">
+                <p>Confirm password</p>
+            <input type="password" id="confirm-password" name="confirm-password" class = "blank" required />
+            </label>
         </div>
     </fieldset>
     <fieldset>
-        <button>Submit</button>
+        <button type ="submit">Submit</button>
     </fieldset>
 
 </form>
