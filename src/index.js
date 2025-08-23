@@ -47,10 +47,9 @@ const passwordsMatch = () => {
 
 const validators = new Map([
     [email, {validate: isValidEmail, errorMsg: "Please enter a valid email"}],
-    // [state, {validate: isValidState, errorMsg: "Please type"}],
-    [postcode, {validate: isValidPostcode, errorMsg: "postcode error"}],
-    [password, {validate: isValidPassword, errorMsg: "Password error"}],
-    [confirmPassword, {validate: passwordsMatch, errorMsg: "Passwords match error"}],
+    [postcode, {validate: isValidPostcode, errorMsg: "Postcodes must contain exactly 4 digits"}],
+    [password, {validate: isValidPassword, errorMsg: "Passwords must contain 8 characters including one letter and one number"}],
+    [confirmPassword, {validate: passwordsMatch, errorMsg: "Passwords do not match"}],
 ])
 
 
@@ -114,11 +113,23 @@ const setToValid = (element) => {
 
 
 form.addEventListener("submit" , (event) => {
-    isValidPassword();
-    if (!email.validity.valid || !password.classList.contains("validated")) {
+    
+    if (!document.querySelector(".valid-field")){
+        event.preventDefault()
+        alert("Please fill out all fields correctly")
+    } else {
+    // if (!form.validity.valid) {
+    //     setTimeout(() => {
+    //     console.log("timeout")}, 100000)
       
-        event.preventDefault();
-    }
+    //     event.preventDefault();
+    // } else {
+    //     setTimeout(() => {
+    //     console.log("timeout")}, 100000)
+    //     alert("Well done. High five! 🖐")
+    // }
+    alert("Well done. High five! 🖐")
+}
 })
 
 
