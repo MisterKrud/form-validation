@@ -21,9 +21,9 @@
             </label>    
         </div>
         <div>
-           <label for="country">
-            <p>Country</p>
-           <input type="text" id="country" autocomplete="off" name="country" minlength="3" class = "blank" required /> 
+           <label for="state">
+            <p>State</p>
+           <input type="text" id="state" autocomplete="off" name="state" minlength="3" class = "blank" required /> 
             <span class = "error" aria-live="polite"></span>
             </label>
         </div>
@@ -31,6 +31,7 @@
             <label for="postcode"> 
                 <p>Postcode</p>
             <input type="number" id="postcode" name="postcode"  minlength="4" maxlength="4"  class = "blank" required />
+            <span class = "error" aria-live="polite"></span>
             </label>
         </div>
     </fieldset>
@@ -39,12 +40,14 @@
             <label for="password">
                 <p>Password</p>
             <input type="password" id="password" name="password" minlength="8" class = "blank"required />
+            <span class = "error" aria-live="polite"></span>
             </label>
         </div>
         <div>
             <label for="confirm-password">
                 <p>Confirm password</p>
             <input type="password" id="confirm-password" name="confirm-password" class = "blank" required />
+            <span class = "error" aria-live="polite"></span>
             </label>
         </div>
     </fieldset>
