@@ -46,12 +46,13 @@ const passwordsMatch = () => {
 
 
 const validators = new Map([
-    [email, {validate: isValidEmail, errorMsg: "email error"}],
-    [state, {validate: isValidState, errorMsg: "state error"}],
+    [email, {validate: isValidEmail, errorMsg: "Please enter a valid email"}],
+    // [state, {validate: isValidState, errorMsg: "Please type"}],
     [postcode, {validate: isValidPostcode, errorMsg: "postcode error"}],
     [password, {validate: isValidPassword, errorMsg: "Password error"}],
     [confirmPassword, {validate: passwordsMatch, errorMsg: "Passwords match error"}],
 ])
+
 
 
 

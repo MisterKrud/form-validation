@@ -11,7 +11,7 @@ p {
   display: block;
 }
 div {
-  border: black solid 1px;
+  /* border: black solid 1px; */
   margin: 0 0 2px 0;
   padding: 4px 0 2px 0;
   display:block;
@@ -75,3 +75,79 @@ background-color:#deffdd;
 }
 
 
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+select {
+  border: 2px solid #dddddd;
+  background: #eeeeee;
+  padding: 10px;
+  transition: 0.4s;
+  margin-left: 10px;
+}
+
+select,label{
+  margin-left:10px;
+}
+
+select:hover,
+select:focus {
+  background: #dddddd;
+}
+
+::picker(select) {
+  border: none;
+}
+
+option {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+ 
+
+  border: 2px solid #dddddd;
+  background: #eeeeee;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+option:first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+
+option:last-of-type {
+  border-radius: 0 0 8px 8px;
+}
+
+option:not(option:last-of-type) {
+  border-bottom: none;
+}
+
+option:nth-of-type(odd) {
+  background: white;
+}
+
+option:hover,
+option:focus {
+  background: rgb(160, 187, 221);
+}
+
+/* selectedcontent .icon {
+  display: none;
+} */
+ button{
+  background-color:rgb(160, 187, 221);
+  box-shadow: 2px 2px 4px rgb(175, 175, 175);
+  border: rgb(82, 82, 82);
+ }
+
+ button:hover{
+  background-color: rgb(24, 66, 117);
+  color: white;
+ }
+
+ button:active{
+  transform: translateX(2px) translateY(2px);
+ }
