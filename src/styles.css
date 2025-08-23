@@ -8,11 +8,13 @@
 
 p {
   margin: 0 0 0 10px;
+  display: block;
 }
 div {
   border: black solid 1px;
   margin: 0 0 2px 0;
   padding: 4px 0 2px 0;
+  display:block;
 }
 
 input, button {
@@ -29,20 +31,20 @@ width: 75px;
 }
 
 
-input:invalid{
+.invalid-field{
   background-color:#ffdddd;
   border: red solid .5px;
 }
 
-input:valid{
+/* input:valid{
   background-color:#deffdd;
   border: green solid .5px;
-}
+} */
 
-/* error-input{
+error-input{
   background-color:#ffdddd;
   border: red solid .5px;
-} */
+}
 
 input:focus:invalid{
   outline: none;
@@ -68,7 +70,8 @@ input:focus:invalid{
 }
 
 .valid-field{
-
+background-color:#deffdd;
+  border: green solid .5px;
 }
 
 
